@@ -3,15 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" href="../css/reset.css" />
     <link rel="stylesheet" href="../css/index.css" />
+    <title>Document</title>
   </head>
   <body>
-    <header>
-      <aside><img src="#" alt="Logga" /></aside>
-      <div><a href=""></a></div>
+    <header class="header-main">
       <!--
       *Logga*
+
         Hem
       Inför ditt besök
         Priser
@@ -26,32 +26,42 @@
         Tivoli
       Butik
         -->
-      <nav>
+      <!-- LOGGA -->
+
+      <!-- MENY -->
+      <nav class="navbar">
+        <aside>
+          <a href="index.html" class="logo">
+            <img src="../img/favicon.png" alt="website logo" />
+          </a>
+        </aside>
         <ul>
           <li>
-            Inför ditt besök
+            <a href="#">Inför ditt besök &#128931;</a>
             <ul>
-              <li>Priser</li>
-              <li>Öppettider</li>
-              <li>Kalender</li>
-              <li>Företag &#38; skola</li>
+              <li><a href="#">Priser</a></li>
+              <li><a href="#">Öppettider</a></li>
+              <li><a href="#">Kalender</a></li>
+              <li><a href="#">Företag &#38; Skola</a></li>
             </ul>
           </li>
           <li>
-            Upptäck parken
+            <a href="#">Upptäck parken &#128931;</a>
             <ul>
-              <li>Våra djur</li>
-              <li>Mat &#38; dryck</li>
-              <li>Butiker</li>
-              <li>Karta</li>
-              <li>Tivoli</li>
+              <li><a href="#">Våra Djur</a></li>
+              <li><a href="#">Mat &#38; Dryck</a></li>
+              <li><a href="#">Butiker</a></li>
+              <li><a href="#">Karta</a></li>
+              <li><a href="#">Tivoli</a></li>
             </ul>
           </li>
-          <li>Butik</li>
+          <li><a href="#">Butik</a></li>
         </ul>
       </nav>
     </header>
-    <main></main>
+    <main>
+      <h1>Title</h1>
+    </main>
     <footer>
       <!--
         Om oss
@@ -61,16 +71,17 @@
           Kontakt
           Blogg
         -->
-      <nav>
-        <p>Om oss</p>
-        <ul>
-          <li>Vår vision</li>
-          <li>Hitta hit</li>
-          <li>Frågor &#38; svar</li>
-          <li>Kontakt</li>
-          <li>Blogg</li>
-        </ul>
-      </nav>
+      <p>Om oss</p>
+      <ul>
+        <li><a href="#">Vår vision</a></li>
+        <li><a href="">Hitta hit</a></li>
+        <li><a href="">Frågor &#38; svar</a></li>
+        <li><a href="">Blogg</a></li>
+      </ul>
+      <aside>
+        <h2>Kontakt</h2>
+        <p></p>
+      </aside>
     </footer>
   </body>
 </html>
