@@ -88,11 +88,22 @@ ul li:hover > ul {
 main {
   min-height: 90vh;
   background-color: whitesmoke;
-  margin-top: 6vh;
+  margin: 10vh 6vw;
   overflow-x: hidden;
   display: grid;
-  grid-template-columns: repeat(2, 50%);
-  grid-template-rows: repeat(6, auto);
+  grid-template-columns: repeat(2, 35vw);
+  row-gap: 10vh;
+  justify-content: space-between;
+}
+main section {
+  border: 0.2vw solid #333;
+}
+main img {
+  height: auto;
+  width: 100%;
+}
+main p {
+  width: 100%;
 }
 #butterfly {
   grid-area: 3 / 2 / 4 / 3;
@@ -102,6 +113,7 @@ main {
 }
 #crocodiles {
   grid-area: 1 / 1 / 2 / 2;
+  width: 100%;
 }
 #dogs {
   grid-area: 4 / 2 / 5 / 3;
@@ -117,6 +129,17 @@ main {
 }
 #santa {
   grid-area: 6 / 1 / 7 / 3;
+  display: flex;
+  height: 30%;
+  justify-content: space-around;
+}
+#santa p {
+  text-align: center;
+  margin: 1vh 2vw;
+}
+#santa img {
+  height: 100%;
+  width: auto;
 }
 #teddybears {
   grid-area: 5 / 1 / 6 / 2;
@@ -134,67 +157,34 @@ footer {
   height: 20vh;
   background-color: #333;
   color: whitesmoke;
-  /* color: #333; <--- Färg vid uppbyggnad */
   box-shadow: -0.1rem -0.1rem 0.7rem #333;
   position: relative;
   bottom: 0;
   text-transform: uppercase;
   display: grid;
-  grid-template-columns: repeat(6, 16.6%);
-  grid-template-rows: repeat(6, 16.6%);
+  grid-template-columns: repeat(3, 33.3%);
+  grid-template-rows: repeat(2, 50%);
   font-size: 1.2rem;
 }
 footer a {
   cursor: pointer;
 }
 
-/* Jag skippar förkortningen grid-area för att bättre visuellt förstå positioneringen.
-Färgerna är för att lättare se placeringen under uppbyggnaden */
 .about {
-  /* background-color: aqua; */
-  grid-row-start: 1;
-  grid-row-end: 3;
-  grid-column-start: 1;
-  grid-column-end: 4;
-  /* grid-area: 1 / 1 / 3 / 4; */
+  grid-area: 1 / 1 / 2 / 2;
 }
 .vision {
-  /* background-color: red; */
-  grid-row-start: 3;
-  grid-row-end: 4;
-  grid-column-start: 1;
-  grid-column-end: 4;
-  /* grid-area: 3 / 1 / 4 / 4; */
+  grid-area: 2 / 1 / 3 / 2;
 }
 .find-us {
-  /* background-color: orange; */
-  grid-row-start: 4;
-  grid-row-end: 5;
-  grid-column-start: 1;
-  grid-column-end: 4;
-  /* grid-area: 4 / 1 / 5 / 4; */
+  grid-area: 1 / 2 / 2 / 3;
 }
 .questions {
-  /* background-color: purple; */
-  grid-row-start: 5;
-  grid-row-end: 6;
-  grid-column-start: 1;
-  grid-column-end: 4;
-  /* grid-area: 5 / 1 / 6 / 4; */
+  grid-area: 2 / 2 / 3 / 3;
 }
 .blog {
-  /* background-color: plum; */
-  grid-row-start: 6;
-  grid-row-end: 7;
-  grid-column-start: 1;
-  grid-column-end: 4;
-  /* grid-area: 6 / 1 / 7 / 4; */
+  grid-area: 1 / 3 / 2 / 4;
 }
 .contact {
-  /* background-color: green; */
-  grid-row-start: 1;
-  grid-row-end: 7;
-  grid-column-start: 4;
-  grid-column-end: 7;
-  /* grid-area: 1 / 4 / 7 / 7; */
+  grid-area: 2 / 3 / 2 / 4;
 }
