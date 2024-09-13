@@ -1,6 +1,3 @@
-:root {
-  --menu-count: 3;
-}
 * {
   margin: 0;
   padding: 0;
@@ -11,94 +8,18 @@ body {
   background-color: whitesmoke;
 }
 
-header {
-  grid-area: header;
-}
-.header-main {
-  width: 100%;
-  padding: 0 6vw;
-  height: 6vh;
-  background-color: whitesmoke;
-  box-shadow: 0.1rem 0.1rem 0.7rem #333;
-  display: flex;
-  justify-content: space-between;
-  position: fixed;
-  top: 0;
-  z-index: 100;
-}
-.header-main nav {
-  display: flex;
-  width: 100%;
-}
-.header-main nav aside {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-}
-
-.header-main ul {
-  height: 100%;
-  padding-left: 4vw;
-  list-style: none;
-  display: flex;
-  align-self: center;
-}
-.header-main ul li {
-  position: relative;
-}
-.header-main ul li a {
-  display: block;
-  padding: 0 0.625rem;
-  height: 100%;
-  line-height: 6vh;
-  color: #333;
-  background-color: whitesmoke;
-  text-transform: uppercase;
-  cursor: pointer;
-  transition: all ease-in-out 100ms;
-  white-space: nowrap;
-}
-.header-main ul li a:hover {
-  background-color: #333;
-  color: whitesmoke;
-}
-/* DROPDOWN STYLING START */
-.header-main ul li ul {
-  visibility: hidden;
-  opacity: 0;
-  display: none;
-  position: absolute;
-  left: -4vw;
-  transition: all ease-in-out 100ms;
-}
-.header-main ul li ul li a {
-  white-space: nowrap;
-}
-ul li:hover > ul {
-  visibility: visible;
-  opacity: 1;
-  display: block;
-}
-/* DROPDOWN STYLING END */
-.store-link {
-  margin-left: auto;
-}
-
 main {
-  min-height: 90vh;
+  min-height: 69vh;
   background-color: whitesmoke;
   margin-top: 6vh;
   overflow-x: hidden;
   display: grid;
-  grid-template-columns: 50% 50%;
-  grid-row: 50% 50%;
+  grid-template-columns: 1fr;
+  grid-row: 25% 75%;
 }
 
 .welcome {
-  grid-column-start: 1;
-  grid-column-end: 3;
-  grid-row-start: 1;
+  grid-area: 1 / 1 / 2 / 2;
   width: 100%;
 }
 .welcome h1 {
@@ -106,15 +27,13 @@ main {
   margin: 2vh auto auto auto;
   text-align: center;
 }
-.note-1 {
-  grid-column-start: 2;
-  grid-column-end: 2;
-  grid-row-start: 2;
-  grid-row-end: 3;
-  display: grid;
+.content {
+  grid-area: 2 / 1 / 3 / 2;
 }
-.note-1 img {
-  align-self: self-end;
+.content img {
+  float: right;
+}
+.content p {
 }
 
 footer {
@@ -153,4 +72,15 @@ footer a {
 }
 .contact {
   grid-area: 2 / 3 / 2 / 4s;
+}
+
+@media only screen and (max-width: 600px) {
+  .welcome {
+    border-top: 0.2rem solid #333;
+  }
+  .welcome h1 {
+    font-size: 4rem;
+    margin: 2vh auto auto auto;
+    text-align: center;
+  }
 }
