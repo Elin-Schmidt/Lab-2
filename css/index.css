@@ -50,6 +50,7 @@ footer {
   grid-template-columns: repeat(3, 33.3%);
   grid-template-rows: repeat(2, 50%);
   font-size: 1.2rem;
+  justify-items: center;
 }
 footer a {
   cursor: pointer;
@@ -82,5 +83,8 @@ footer a {
     font-size: 4rem;
     margin: 2vh auto auto auto;
     text-align: center;
+  }
+  footer {
+    justify-items: center;
   }
 }

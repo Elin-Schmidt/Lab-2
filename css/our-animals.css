@@ -5,84 +5,9 @@
   margin: 0;
   padding: 0;
 }
-@media screen and (max-width: 1399px) {
   body {
     width: 100%;
     background-color: whitesmoke;
-  }
-
-  header {
-    grid-area: header;
-  }
-  .header-main {
-    width: 100%;
-    padding: 0 6vw;
-    height: 6vh;
-    background-color: whitesmoke;
-    box-shadow: 0.1rem 0.1rem 0.7rem #333;
-    display: flex;
-    justify-content: space-between;
-    position: fixed;
-    top: 0;
-    z-index: 100;
-  }
-  .header-main nav {
-    display: flex;
-    width: 100%;
-  }
-  .header-main nav aside {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-  }
-
-  .header-main ul {
-    height: 100%;
-    padding-left: 4vw;
-    list-style: none;
-    display: flex;
-    align-self: center;
-  }
-  .header-main ul li {
-    position: relative;
-  }
-  .header-main ul li a {
-    display: block;
-    padding: 0 0.625rem;
-    height: 100%;
-    line-height: 6vh;
-    color: #333;
-    background-color: whitesmoke;
-    text-transform: uppercase;
-    cursor: pointer;
-    transition: all ease-in-out 100ms;
-    white-space: nowrap;
-  }
-  .header-main ul li a:hover {
-    background-color: #333;
-    color: whitesmoke;
-  }
-  /* DROPDOWN STYLING START */
-  .header-main ul li ul {
-    visibility: hidden;
-    opacity: 0;
-    display: none;
-    position: absolute;
-    left: -4vw;
-    transition: all ease-in-out 100ms;
-  }
-  .header-main ul li ul li a {
-    white-space: nowrap;
-  }
-  ul li:hover > ul {
-    visibility: visible;
-    opacity: 1;
-    display: block;
-  }
-  /* DROPDOWN STYLING END */
-  .store-link {
-    margin-left: auto;
   }
   main {
     background-color: rgb(201, 201, 201);
@@ -234,4 +159,3 @@
   .divider-parallax {
     display: none;
   }
-}

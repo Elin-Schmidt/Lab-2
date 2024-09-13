@@ -2,7 +2,7 @@
 
 :root {
   /* based on how many li's are inside .header-main ul */
-  --menu-count: 3;
+  --menu-count: 4;
 }
 
 .mobile-menu-btn {
@@ -33,6 +33,9 @@ header {
   justify-content: center;
   align-items: center;
   cursor: pointer;
+}
+.header-main nav aside img {
+  width: 2.7vw;
 }
 
 .header-main ul {
@@ -113,10 +116,8 @@ ul li:hover > ul {
     overflow-y: scroll;
     overflow-x: hidden;
   }
-  .header-main .logo {
-    height: 30%;
-    padding: 0;
-    margin: 0 0 1.5vh 0;
+  .header-main nav aside {
+    display: none;
   }
   .header-main ul {
     height: 70%;

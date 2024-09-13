@@ -16,8 +16,10 @@ body {
   text-transform: uppercase;
   color: whitesmoke;
   padding: 1rem;
-}
-.animal-links ul {
+  background-color: rgba(51, 51, 51, 0.69);
+  border-radius: 1.6vw;
+  box-shadow: 0 0.4vw 3vw rgba(255, 255, 255, 0.69);
+  cursor: pointer;
 }
 .animal-links ul li:not(:nth-child(11)) {
   margin-bottom: 2vh;
@@ -55,6 +57,8 @@ section {
 section img {
   border-radius: 50vw;
   margin: 15vh auto;
+  height: 69vh;
+  width: auto;
 }
 #butterfly {
   background-image: url(../img/animals/Butterfly\ plush\ 2a9c50d7-f1c9-4973-80ab-7349fc30840a.png);
@@ -170,7 +174,7 @@ footer a {
     z-index: -1;
   }
   #butterfly {
-    padding-top: 15vh;
+    padding-top: 20vh;
   }
   #zebra {
     padding-bottom: 25vh;
@@ -180,7 +184,7 @@ footer a {
     z-index: 1;
     background-color: whitesmoke;
     box-shadow: 0.1rem 0.1rem 0.7rem #333;
-    height: 11vh;
+    height: 15vh;
     top: 5vh;
     cursor: pointer;
     left: 0;
@@ -244,7 +248,12 @@ footer a {
   .animal-links ul li:nth-child(11) {
     grid-area: 3 / 4 / 4 / 5;
   }
+  main section img {
+    width: auto;
+    height: fit-content;
+  }
   footer {
     font-size: 1rem;
+    justify-items: center;
   }
 }
