@@ -5,17 +5,15 @@
   --menu-count: 4;
 }
 
-.mobile-menu-btn {
+.mobile-menu-btn,
+nav ul li:nth-last-child(1) {
   display: none;
 }
 
-header {
-  grid-area: header;
-}
 .header-main {
   width: 100%;
   padding: 0 6vw;
-  height: 6vh;
+  height: 6dvh;
   background-color: whitesmoke;
   box-shadow: 0.1rem 0.1rem 0.7rem #333;
   display: flex;
@@ -26,16 +24,12 @@ header {
 }
 .header-main nav {
   display: flex;
-  width: 100%;
 }
 .header-main nav aside {
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
-}
-.header-main nav aside img {
-  width: 2.7vw;
 }
 
 .header-main ul {
@@ -142,9 +136,14 @@ ul li:hover > ul {
     flex-direction: column;
     justify-content: center;
     transition: all ease-in-out 100ms;
+    align-content: center;
   }
   .header-main ul li:nth-last-child(1) {
     border-bottom: 0.1vh solid #ddd;
+    display: block;
+  }
+  .header-main ul li img {
+    margin: auto;
   }
   .header-main ul li a {
     width: 100%;

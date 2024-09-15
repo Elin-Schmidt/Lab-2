@@ -1,0 +1,53 @@
+main {
+  margin-top: 6.5dvh;
+}
+.container {
+  max-width: 100rem;
+  margin-inline: auto;
+  padding-inline: 2rem;
+  margin-top: 10dvh;
+}
+.stacked {
+  display: grid;
+  justify-items: center;
+  padding: 1rem;
+}
+.stacked > * {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+.animals {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: 3.69rem;
+}
+.card {
+  aspect-ratio: 1 / 1.5;
+  /* border: 3px solid hotpink; */
+  box-shadow: 0.1rem 0.1rem 0.7rem darkslategray;
+}
+.card:nth-last-child(1) {
+  margin-bottom: 4dvh;
+}
+.card_content {
+  background-color: white;
+  align-self: end;
+  margin: 0.5rem 0.5rem 2rem;
+  padding: 0.5rem;
+  box-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.5);
+  border-radius: 0.5rem;
+}
+.card_title {
+  font-size: 2.6rem;
+  line-height: 1.1;
+  text-transform: uppercase;
+  color: rgb(0, 86, 86);
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  text-align: center;
+}
+.card_img {
+  width: 90%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 50rem;
+}
