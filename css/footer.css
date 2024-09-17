@@ -38,7 +38,7 @@ footer a {
 @media screen and (max-width: 600px) {
   footer {
     font-size: 1rem;
-    justify-items: center;
     width: 100%;
   }
 }
+/* Validated 17/9-24 with (0 errors, 0 warnings, 1 info) */

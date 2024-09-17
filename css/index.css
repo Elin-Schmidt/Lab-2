@@ -20,7 +20,7 @@ main {
   overflow-x: hidden;
   display: grid;
   grid-template-columns: 1fr;
-  grid-row: auto 90%;
+  grid-template-rows: 1fr 2fr;
 }
 
 .welcome {
@@ -76,7 +76,8 @@ main {
   }
   .welcome h1 {
     font-size: 4rem;
-    margin: 1vh auto;
     text-align: center;
   }
 }
+
+/* Validated 17/9-24 with (0 errors, 0 warnings, 10 info) */
