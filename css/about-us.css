@@ -1,0 +1,17 @@
+main {
+  margin-top: 4dvh;
+  display: grid;
+}
+
+.about-us-wrapper {
+  min-height: 90dvh;
+  margin: auto;
+}
+.about-us-wrapper h3 {
+  font-size: 5rem;
+  margin: 6dvh auto 3dvh;
+}
+.about-us-wrapper p {
+  margin-top: 1dvh;
+  font-weight: 700;
+}
