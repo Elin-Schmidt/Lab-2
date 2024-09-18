@@ -18,7 +18,8 @@ main {
 }
 .animals {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  /* https://defensivecss.dev/tip/auto-fit-fill/ */
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
   gap: 3.69rem;
 }
 .card {
@@ -50,4 +51,13 @@ main {
   object-fit: cover;
   border-radius: 50rem;
 }
-/* Validated 17/9-24 with (0 errors, 0 warnings, 6 info) */
+
+@media only screen and (max-width: 600px) {
+  .card {
+    margin: auto 7dvw;
+  }
+  .card:nth-child(1) {
+    margin-top: -9dvh;
+  }
+}
+/* Validated 17/9-24 with (0 errors, 0 warnings, 7 info) */
