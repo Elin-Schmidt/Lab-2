@@ -7,7 +7,7 @@ main {
   min-height: 90dvh;
   margin: auto;
 }
-.about-us-wrapper h3 {
+.about-us-wrapper h1 {
   font-size: 5rem;
   margin: 6dvh auto 3dvh;
 }
@@ -15,3 +15,4 @@ main {
   margin-top: 1dvh;
   font-weight: 700;
 }
+/* Validated 17/9-24 with (0 errors, 0 warnings, 2 infos) */
